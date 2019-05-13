@@ -1,3 +1,3 @@
-module github.com/zhouxun1995/xutil
+module github.com/go-zhouxun/xutil
 
 go 1.12
