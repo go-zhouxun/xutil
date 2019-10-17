@@ -1,7 +1,6 @@
 package xrandom
 
 import (
-	"bytes"
 	"math/rand"
 	"time"
 )
@@ -12,14 +11,6 @@ const (
 	KC_RAND_KIND_UPPER = 2 // 大写字母
 	KC_RAND_KIND_ALL   = 3 // 数字、大小写字母
 )
-
-func StringJoint(strs ...string) string {
-	b := bytes.Buffer{}
-	for _, str := range strs {
-		b.WriteString(str)
-	}
-	return b.String()
-}
 
 func Krand(size int, kind int) string {
 	if size < 1 {
